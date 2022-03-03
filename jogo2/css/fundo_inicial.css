@@ -1,0 +1,7 @@
+#fundoGame {
+    width: 950px;
+    height: 630px;
+    background-image: url(../imgs/fundo_inicial.jpg);
+    border-color: #FFF;
+    border-style: solid;
+}

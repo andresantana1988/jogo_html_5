@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" lang="pt-br">
+    <title>Resgate</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <!--<link id="fundo_game" href="css/fundo_inicial.css" rel="stylesheet" type="text/css">-->
+</head>
+
+<body>
+    <div id="container">
+        <!-- div container !-->
+
+        <div id="fundoGame" style="background-Image:url(./././imgs/fundo_game.jpg)">
+            <!-- div fundoGame !-->
+            <!-- fundo inicial do game -->
+
+            <div id="inicio">
+                <h1> Resgate </h1> <!-- div inicio !-->
+                <p>Utilize a tecla W para movimentar o helicóptero para cima, a tecla S para movimentar o helicóptero
+                    para baixo e a tecla D para atirar.</p>
+                <P> Escolha o ambiente e clique em "JOGAR" </P>
+                <p>
+
+                    <button class='opcao' id='opcao1' onclick="defineImagem(1)"> FLORESTA </button>
+                    <button class='opcao' id='opcao2' onclick="defineImagem(2)"> DESERTO </button>
+                    <button class='opcao' id='opcao3' onclick="defineImagem(3)"> GELEIRA </button>
+                </p>
+                <p>
+                    <button class='jogar' onclick="opcaoFundo()"> JOGAR </button>
+
+                </p>
+            </div> <!-- Fim da div inicio !-->
+
+        </div> <!-- Fim da div fundoGame !-->
+
+    </div> <!-- Fim da div container !-->
+    <!-- Sons do jogo !-->
+    <audio src="sons/som.mp3" preload="auto" id="somDisparo"></audio>
+    <audio src="sons/explosao.mp3" preload="auto" id="somExplosao"></audio>
+    <audio src="sons/musica_fundo.mp3" preload="auto" id="musica"></audio>
+    <audio src="sons/gameover.mp3" preload="auto" id="somGameover"></audio>
+    <audio src="sons/perdido.mp3" preload="auto" id="somPerdido"></audio>
+    <audio src="sons/resgate.mp3" preload="auto" id="somResgate"></audio>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery-collision.min.js"></script>
+</body>
+
+</html>
